@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "439346525419",
+    "project_id": "blechatdemo",
+    "storage_bucket": "blechatdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439346525419:android:587e8651ff8c14ba637aae",
+        "android_client_info": {
+          "package_name": "com.example.blechatdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439346525419-o9accd9ujkohm4niseh15trbhv9rr13l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqaeVPjZoasOd_AF3acAXvA07ZBriw3V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439346525419-o9accd9ujkohm4niseh15trbhv9rr13l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

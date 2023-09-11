@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BLEChatDemo</string>
+    <string name="ble_permission_required">Please Enable Bluetooth permission</string>
+</resources>

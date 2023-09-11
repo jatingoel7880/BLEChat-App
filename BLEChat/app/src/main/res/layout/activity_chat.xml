@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9F9"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_height="64dp"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:layout_marginLeft="8dp"
+            app:tint="@color/black"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBtn"
+            android:layout_height="30dp"
+            android:layout_width="30dp"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/chatName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/distance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_below="@+id/distance"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomView"
+            android:layout_width="match_parent"/>
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/inputviewbg"
+            android:id="@+id/bottomView"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/sendBtn"
+                android:background="@android:color/transparent"
+                android:hint="Enter message"
+                android:minHeight="55dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageButton
+                android:id="@+id/attachBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_attach_file"
+                android:layout_toLeftOf="@id/sendBtn"
+                />
+
+            <ImageButton
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_send"
+                android:id="@+id/sendBtn"
+                android:layout_height="30dp"
+                android:layout_width="30dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
